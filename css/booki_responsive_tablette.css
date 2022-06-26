@@ -1,0 +1,101 @@
+/** Responsive tablette
+===================================================================*/
+
+@media screen and (max-width: 992px) {
+  /** Filtres
+===================================================================*/
+
+  .menu_filters {
+    display: flex;
+    flex-direction: column;
+    font-family: font_1;
+    font-size: 20px;
+  }
+
+  .filter {
+    display: flex;
+    align-items: baseline;
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .indic {
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+  /** section hotels
+===================================================================*/
+
+  .hotels {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+  }
+
+  /** hébergement **/
+
+  .section_places {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .section_places h2 {
+    margin: 0;
+  }
+
+  /** Section populaire
+===================================================================*/
+
+  .section_popular {
+    border-radius: 0;
+  }
+  
+  .image_hotel_popular {
+    width: 200px;
+  }
+
+  .stars_popular {
+    left: 215px;
+  }
+
+  /** Section activitées
+===================================================================*/
+
+  .section_activities {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activities {
+    flex-direction: column;
+  }
+
+  .img_activities_1 {
+    min-height: 135px;
+  }
+
+  .img_activities_2 {
+    min-height: 135px;
+  }
+
+  .img_activities_3 {
+    min-height: 135px;
+  }
+
+  .img_activities_4 {
+    min-height: 135px;
+  }
+
+  .img_activities_5 {
+    min-height: 135px;
+  }
+
+  /** Footer
+===================================================================*/
+
+  footer {
+    padding-right: 50px;
+  }
+}

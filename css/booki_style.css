@@ -1,0 +1,582 @@
+@font-face {
+  font-family: "font_1";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrE.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "font_2";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "font_3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptug8zYS_SKggPNyC0ITw.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/** Eléments principaux de la page 
+===================================================================*/
+
+* {
+  box-sizing: border-box;
+  /** box-sizing est appliqué à tous les éléments */
+}
+
+*:focus {
+  outline: none;
+  /** pour retirer le contour par défaut du formulaire **/
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+/**header 
+===================================================================*/
+
+header {
+  position: relative;
+  padding: 40px 20px 40px 40px;
+}
+
+header .top_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.logo {
+  height: 100px;
+  padding: 40px 0 0 20px;
+}
+
+/** Nav header
+===================================================================*/
+
+.header nav ul {
+  display: flex;
+  list-style-type: none;
+  columns: 2;
+  padding: 0;
+  margin: 0;
+}
+
+.header nav li {
+  padding: 0 30px;
+  border-top: 3px solid transparent;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header nav a {
+  font-family: font_2;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+.header nav a:hover {
+  color: #0065fc;
+}
+.header nav li:hover {
+  border-top: 3px solid #0065fc;
+}
+
+.header_baseline {
+  padding: 80px 0 20px 0;
+}
+
+.header_baseline_l1 {
+  font-family: font_1;
+  font-size: 1.4rem;
+}
+.header_baseline_l2 {
+  font-family: font_3;
+  font-size: 1rem;
+}
+
+/** Form header
+===================================================================*/
+
+.desktop_pad {
+  display: flex;
+  padding: 20px 0 30px 0;
+}
+
+form .fa-location-dot {
+  position: relative;
+  right: -5px;
+  height: 52px;
+  background-color: #f2f2f2;
+  padding: 26px 20px 24px 20px;
+  border-radius: 18px 0 0 18px;
+}
+
+input[type="text"] {
+  width: 235px;
+  border: 1px solid #f2f2f2;
+  font-family: font_1;
+  font-size: 1.15rem;
+  padding: 14px 16px 14px 16px;
+}
+
+.search {
+  font-family: font_1;
+  position: relative;
+  padding: 15px;
+  left: -5px;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  background-color: #0065fc;
+  border-radius: 0 18px 18px 0;
+  cursor: pointer;
+}
+
+.smartphone {
+  display: none;
+}
+
+/** Filtres
+===================================================================*/
+
+.menu_filters {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-family: font_1;
+  font-size: 20px;
+}
+
+.indic {
+  padding-right: 20px;
+  margin: 0;
+}
+
+.filter {
+  display: flex;
+  align-items: baseline;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.filter i {
+  display: flex;
+  background-color: #deebff;
+  border-radius: 50px 50px 50px 50px;
+  padding: 15px;
+  z-index: 1;
+  color: #0065fc;
+}
+
+.filter p {
+  border: 3px solid #f2f2f2;
+  border-radius: 50px 50px 50px 50px;
+  padding: 12px 20px 12px 50px;
+  margin: 0 0 0 -45px;
+}
+.filter p:hover {
+  border: 3px solid #deebff;
+  color: #6e6e6e;
+  background-color: #deebff;
+}
+
+.filter .fa-child-reaching {
+  background-color: #deebff;
+  padding: 15px 17px 15px 17px;
+}
+
+/** Infos
+===================================================================*/
+
+.info {
+  display: flex;
+  align-items: baseline;
+  padding: 20px 0 0 0px;
+  font-family: font_2;
+  font-size: 14px;
+}
+
+.info .fa-info {
+  color: #0065fc;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+  padding: 10px 8px;
+  margin-right: 12px;
+}
+
+/** Section hotels
+===================================================================*/
+
+.hotels {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 40px 0 40px;
+}
+
+/** section hébergements
+===================================================================*/
+
+.section_places a {
+  text-decoration: none;
+}
+
+.section_places {
+  flex: 2;
+  min-width: 680px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.section_places h2 {
+  font-family: font_1;
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 0 0 30px 0;
+}
+
+.presentation_hotels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.link_hotel {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  flex-basis: 30%;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 10px 20px -20px #6e6e6e;
+  padding: 5px;
+}
+
+.image_hotel {
+  flex: 1;
+  border-radius: 20px 20px 0 0;
+  background-size: cover;
+  background-position: 0;
+  min-height: 115px;
+  overflow: hidden;
+}
+
+.baseline_hotel_l1 {
+  font-family: font_1;
+  font-size: 1rem;
+  padding: 10px 0 5px 10px;
+}
+
+.baseline_hotel_l2 {
+  font-family: font_2;
+  font-size: 0.8rem;
+  padding: 5px 0 5px 10px;
+}
+
+.baseline_hotel_l2 .prix {
+  font-family: font_1;
+}
+
+.stars {
+  display: flex;
+  align-content: flex-start;
+  /* margin-left: 10px; */
+  font-size: 0.75rem;
+  letter-spacing: -1px;
+  padding: 5px 0 10px 10px;
+}
+
+.blue_stars {
+  color: #0065fc;
+}
+
+.grey_stars {
+  margin-left: 3px;
+  color: #f2f2f2;
+}
+
+.presentation_hotels a {
+  font-family: font_1;
+  text-decoration: none;
+  color: #000000;
+}
+
+.more {
+  padding: 40px 0 20px 0;
+  font-family: font_1;
+  color: #000000;
+  text-align: center;
+  /* margin-left: 10px; */
+  font-size: 18px;
+}
+
+/** Section populaire
+===================================================================*/
+
+.section_popular {
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.presentation_hotels_popular {
+  padding: 0px;
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link_hotel_popular {
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 10px 20px -20px #6e6e6e;
+}
+
+.image_hotel_popular {
+  border-radius: 20px 0 0 20px;
+  background-size: cover;
+  background-position: 0;
+  min-height: 135px;
+  min-width: 125px;
+}
+
+.section_popular h2 {
+  font-family: font_1;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title i {
+  font-size: 1.2rem;
+}
+
+.baseline_hotel_popular_l1 {
+  font-family: font_1;
+  font-size: 1rem;
+  padding: 10px 0 5px 10px;
+}
+
+.baseline_hotel_popular_l2 {
+  font-family: font_2;
+  font-size: 0.8rem;
+  padding: 10px 0 5px 10px;
+}
+
+.baseline_hotel_popular_l2 .price {
+  font-family: font_1;
+}
+
+.stars_popular {
+  position: absolute;
+  bottom: 20px;
+  left: 145px;
+  display: flex;
+  align-content: flex-start;
+  font-size: 0.75rem;
+  letter-spacing: -1px;
+}
+
+.blue_stars_popular {
+  color: #0065fc;
+}
+
+.grey_stars_popular {
+  margin-left: 3px;
+  color: #f2f2f2;
+}
+
+.presentation_hotels_popular a {
+  font-family: font_1;
+  text-decoration: none;
+  color: #000000;
+}
+
+/** Section activitées
+ ===================================================================*/
+
+.section_activities {
+  width: 100%;
+  border-radius: 20px;
+  padding: 40px 40px 60px 40px;
+}
+
+.section_activities h2 {
+  margin: 0;
+  padding: 30px 0 30px 0;
+  /* padding: 0 0 40px 0; */
+}
+
+.activities {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.activities p {
+  margin: 0;
+}
+
+.activities a {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 11px 16px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #000000;
+
+  text-overflow: ellipsis " [..]";
+}
+
+.column_activities {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.column_activities a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.img_activities_1 {
+  flex: 1;
+  min-height: 390px;
+  background-size: cover;
+  background-position: 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.img_activities_2 {
+  flex: 1;
+  min-height: 180px;
+  background-size: cover;
+  background-position: 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.img_activities_3 {
+  flex: 1;
+  min-height: 130px;
+  background-size: cover;
+  background-position: 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.img_activities_4 {
+  flex: 1;
+  min-height: 200px;
+  background-size: cover;
+  background-position: 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.img_activities_5 {
+  flex: 1;
+  min-height: 90px;
+  background-size: cover;
+  background-position: 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.section_activities h2 {
+  font-family: font_1;
+  font-size: 1.3rem;
+}
+
+.baseline_activities {
+  font-family: font_1;
+  padding: 20px;
+}
+
+/** Footer
+===================================================================*/
+
+footer {
+  background-color: #f2f2f2;
+  padding: 50px 350px 10px 50px;
+  font-family: font_1;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+footer h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+footer li {
+  padding: 0 0 10px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+  font-family: font_3;
+  font-size: 16px;
+}
