@@ -479,16 +479,16 @@ button .fa-solid{
 .section_activities h2 {
   margin: 0;
   padding: 30px 0 30px 0;
-  /* padding: 0 0 40px 0; */
+  padding: 0 0 40px 0;
 }
 
 .activities {
-  background-color: rgb(175, 192, 218);
+  background-color: rgb(255, 255, 255);
   display: flex;
   width: 100%;
   flex-direction: row;
-  /* justify-content: center;
-  justify-content: space-between; */
+  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
 }
 
@@ -497,12 +497,10 @@ button .fa-solid{
 }
 
 .activities a {
-  max-height: 200px;
-  width: 200px;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /* width: 100%; */
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0px 11px 16px 4px rgba(0, 0, 0, 0.2);
   text-decoration: none;
