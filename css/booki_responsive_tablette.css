@@ -1,6 +1,7 @@
 /** Responsive tablette
 ===================================================================*/
 
+
 @media screen and (max-width: 992px) {
   /** Filtres
 ===================================================================*/
@@ -27,14 +28,11 @@
   /** section hotels
 ===================================================================*/
 
-  .hotels {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0;
-  }
 
   /** hébergement **/
+  article.hotels {
+    padding: 0;
+  }
 
   .section_places {
     border-radius: 0;
@@ -56,9 +54,7 @@
     width: 200px;
   }
 
-  .stars_popular {
-    left: 215px;
-  }
+
 
   /** Section activitées
 ===================================================================*/
