@@ -58,8 +58,12 @@
 
   /** Form header
 ===================================================================*/
-
-  .desktop_pad {
+  
+  form {
+    padding-left: 20px;
+  }
+  
+  button span {
     display: none;
   }
 
@@ -68,24 +72,10 @@
     padding: 20px 20px 30px 20px;
   }
 
-  .zoom {
-    border: none;
-    height: 52px;
-    min-width: 50px;
-    border-radius: 15px;
-    background-color: #0065fc;
-    position: relative;
-    left: -15px;
-    cursor: pointer;
+  button .fa-solid {
+    display: block;
   }
 
-  form .fa-magnifying-glass {
-    position: relative;
-    top: 18px;
-    left: -48px;
-    color: #ffffff;
-    cursor: pointer;
-  }
 
   /** Filtres
 ===================================================================*/
@@ -166,6 +156,11 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+
+  .image_hotel {
+    height: 135px;
+    object-fit: cover;
   }
 
   /** Footer
