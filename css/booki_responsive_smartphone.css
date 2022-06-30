@@ -133,9 +133,6 @@
     padding: 0;
   }
 
-  .link_hotel_popular {
-    height: 145px;
-  }
 
   .stars_popular {
     left: 155px;
@@ -172,7 +169,6 @@
     padding: 40px 0 20px 30px;
   }
 
-  footer ul {
+  footer ul{
     padding-bottom: 50px;
   }
-}

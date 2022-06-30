@@ -60,6 +60,10 @@
 
   /** Section activitées
 ===================================================================*/
+.section_activities {
+  padding: 50px 20px;
+}
+
 .activities {
   flex-direction: column;
 }
@@ -68,7 +72,7 @@
 .bloc_2,
 .bloc_3,
 .bloc_4 {
-width: 100%;
+  width: 100%;
 }
 
 .bloc_1 .card_size_0,
