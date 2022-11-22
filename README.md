@@ -7,6 +7,5 @@
 ### Bokki's concept is to offer users the opportunity to choose accommodation in the city of their choice while planning their activities.
 
 ---
-to the website :
-
+to the website : https://thomasrogister.github.io/Booki/
 to OpenClassrooms : https://openclassrooms.com/fr/
