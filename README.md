@@ -4,7 +4,7 @@
 ![](assets/home%20page%20booki.png)
 
 ### Booki is an online vacation planning company. 
-### Bokki's concept is to offer users the opportunity to choose accommodation in the city of their choice while planning their activities.
+#### Bokki's concept is to offer users the opportunity to choose accommodation in the city of their choice while planning their activities.
 
 ---
 to the website : https://thomasrogister.github.io/Booki/
