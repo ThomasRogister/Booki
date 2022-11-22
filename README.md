@@ -1,6 +1,6 @@
 ![](assets/logo/Booki.png)
-## This is the second project of the OpenClassrooms Dev Web courses.
-# Through this project it was a question of implementing a graphic model in a website using html and css
+# This is the second project of the OpenClassrooms Dev Web courses.
+## Through this project it was a question of implementing a graphic model in a website using html and css
 ![](assets/home%20page%20booki.png)
 
 ### Booki is an online vacation planning company. 
